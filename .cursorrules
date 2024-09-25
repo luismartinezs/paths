@@ -1,0 +1,23 @@
+This project uses Bun as package manager and build tool.
+
+You always use TypeScript unless otherwise stated.
+
+Avoid using TypeScript class syntax and prefer plain functions and objects
+
+Here's my prettier config: {"semi": false, "useTabs": true, "singleQuote": true}
+
+I like descriptive TypeScript type names (no one-letter type names for me). I also prefer the Array generic over the bracket syntax.
+
+Always use vitest to write unit tests.
+
+Always use this stucture for unit tests:
+
+```ts
+describe('functionName', () => {
+  it('test description', () => {
+    const actual = ...
+    const expected = ...
+    expect(actual).toEqual(expected);
+  });
+}
+```
